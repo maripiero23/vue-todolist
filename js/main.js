@@ -5,22 +5,22 @@ createApp({
         return{
             toDoList: [
                 {
-                    text: "testo del task1",
+                    text: "cosa1",
                     done: false
                 },
 
                 {
-                    text: "testo del task2",
+                    text: "cosa2",
                     done: false
                 },
 
                 {
-                    text: "testo del task3",
+                    text: "cosa3",
                     done: false
                 },
 
                 {
-                    text: "testo del task3",
+                    text: "cosa4",
                     done: false
                 }
             ]
