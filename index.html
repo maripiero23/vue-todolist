@@ -13,13 +13,32 @@
 </head>
 <body>
     <div id="app">
-        <div class="container d-flex justify-content-center">
-            <h1 class="my-5">Cose da fare</h1>
-        </div>
-        <main class="container">
+        <main class="container my-5">
+            <h1 class="text-center">ToDoList</h1>
+
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    hgh
+                    <!-- form per aggiungere un nuovo elemento -->
+                    <form class="mb-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="cosa vuoi ricordare?">
+
+                            <button class="btn btn-success">aggiungi</button>
+                        </div>
+                    </form>
+
+                    <!-- contenitore degli elementi della lista -->
+                    <div class="list-container">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex align-items-center gap-3">
+                                <input type="checkbox">
+
+                                <div class="flex-fill">testo cose da fare</div>
+
+                                <button class="btn btn-danger btn-sm">Cancella</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
