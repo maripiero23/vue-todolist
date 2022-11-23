@@ -23,11 +23,21 @@ createApp({
                     text: "cosa4",
                     done: false
                 }
-            ]
+            ],
+
+            newTextList: "",
         };
     },
 
     methods: {
+        onFormSubmit(){
+            this.toDoList.push({
+                text: this.newTextList,
+                done: false,
+                createdAt:"",
+                completedAt:"",
+            })
+        }
 
     }
 
