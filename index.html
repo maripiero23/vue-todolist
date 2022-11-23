@@ -14,7 +14,7 @@
 <body>
     <div id="app">
         <main class="container my-5">
-            <h1 class="text-center">ToDoList</h1>
+            <h1 class="text-center pb-2">ToDoList</h1>
 
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -29,15 +29,25 @@
 
                     <!-- contenitore degli elementi della lista -->
                     <div class="list-container">
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex align-items-center gap-3">
-                                <input type="checkbox">
+                        <div class="list-group">
+                            <!-- singolo elemento della lista -->
+                            <li class="list-group-item d-flex align-items-center gap-3"
+                             v-for=" task in toDoList">
+                             <label class="form-check form-switch flex-fill py-2">
+                                <input class="form-check-input" type="checkbox">
+                                <!-- Testo dell'elemento -->
+                                Testo cosa da fare
+                             </label>
 
-                                <div class="flex-fill">testo cose da fare</div>
 
+                                <!-- <input type="checkbox">
+
+                                <div class="flex-fill">testo cose da fare</div> -->
+
+                                <!-- Pulsante elimina elemento dalla lista -->
                                 <button class="btn btn-danger btn-sm">Cancella</button>
                             </li>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>

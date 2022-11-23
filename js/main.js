@@ -17,6 +17,11 @@ createApp({
                 {
                     text: "testo del task3",
                     done: false
+                },
+
+                {
+                    text: "testo del task3",
+                    done: false
                 }
             ]
         };
